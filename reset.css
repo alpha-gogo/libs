@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 /**
   Reset -- 重置样式表
@@ -10,10 +10,17 @@
 不同的浏览器对于html标签的解释各不相同，重置css可以使得html标签在各个浏览器下产生相同的表现效果。*/
 
 /* reset */
-* {
+/* * { */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* border和padding计算入width和height之内，即怪异模式 */
+    /* box-sizing: border-box; */
+/* } */
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+{
     margin: 0;
     padding: 0;
-    /*border和padding计算入width和height之内，即怪异模式*/
     box-sizing: border-box;
 }
 
@@ -22,9 +29,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+/**, *:before, *:after {
     box-sizing: inherit;
-}
+}*/
 
 a {
     /*去掉超链接的下划线*/
@@ -35,7 +42,7 @@ a {
     display: block;
 }
 
-ul, ol, li {
+ul, ol, li, dl, dt, dd {
     list-style: none;
 }
 
@@ -49,13 +56,14 @@ img {
 }
 
 /*去掉元素的边框*/
-*:focus {
+/**:focus {
     outline: none;
 }
 
 input {
+    border: none;
     outline: none;
-}
+}*/
 
 /*超出范围用省略号代替*/
 .ellipsis {
@@ -85,7 +93,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    font-family: "Microsoft YaHei", "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    font-family: Arial, "苹方", "Microsoft YaHei", "宋体", Tahoma, Helvetica, "\5b8b\4f53", sans-serif;
 
     background: url();
     background-color: ;
@@ -95,5 +103,5 @@ body {
     background-attachment: ;
 
     margin: 0 auto;
-    color: #000;
+    color: #333;
 }
