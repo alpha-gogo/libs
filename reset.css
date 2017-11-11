@@ -97,9 +97,9 @@ body {
 
     background: url();
     background-color: ;
+    background-image: url();  /*可添加多个背景图*/
     background-repeat: ;
     background-position: 0 0;
-    background-image: url();  /*可添加多个背景图*/
     background-attachment: ;
 
     margin: 0 auto;

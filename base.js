@@ -18,11 +18,11 @@ function randomColor() {
 	// 0 -- str.length-1
 	var str = "0123456789abcdef";
 	var color = "#";
-	for(var i=0; i<6; i++){
+	for(var i = 0; i < 6; i++){
 		// 产生随机下标
 		var index = parseInt( Math.random()*str.length );
 		// 根据下标取字符
-		color+=str.charAt(index);
+		color += str.charAt(index);
 	}
 	return color;
 }
@@ -31,12 +31,12 @@ function randomColor() {
 function randomRGBAColor() {
 	// rgba(255,255,255,0)
 	var color = "rgba(";
-		for(var i=0; i<3; i++){
-			var num = parseInt( Math.random()*255+1 );
-		}
-	color+=num+",";
+	for(var i = 0; i < 3; i++){
+		var num = parseInt( Math.random()*255+1 );
+        color += num+",";
+    }
 
-	var num1=parseInt( (Math.random()*11)/10 );
-	color+=num1+")";
+	var num1 = parseInt(Math.random()*11)/10 ;
+	color += num1+")";
 	return color;
 }
